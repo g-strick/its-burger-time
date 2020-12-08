@@ -2,8 +2,9 @@ $(function () {
   // add new
   $(".create-form").on("submit", function (event) {
     event.preventDefault();
+    console.log("clicked");
     const newBurger = {
-      burger_name: $("#newburger").val().trim(),
+      burger_name: $("#newBurger").val().trim(),
       devoured: 0,
     };
     $.ajax("/api/burgers", {
