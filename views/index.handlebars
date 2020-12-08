@@ -5,14 +5,21 @@
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    {{this.id}} - {{this.burger_name}}
+    {{this.burger_name}}
     <hr>
     {{/unless}}
     {{/each}}
 </ul>
 
 <h2>Burgers that have been eaten!</h2>
-
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    {{this.burger_name}}
+    <hr>
+    {{/if}}
+    {{/each}}
+</ul>
 <h2>Add a burger</h2>
 <form class="create-form">
 
