@@ -17,3 +17,26 @@ $(function () {
     });
   });
 });
+
+$(function () {
+  $(".change-devour").on("click", function (event) {
+    var id = $(this).data("id");
+    var newDevour = $(this).data("newdevour");
+    console.log("newDevour:", newDevour);
+
+    var newDevourState = {
+      devour: true,
+      // id: id,
+    };
+    console.log("new devour");
+    // Send the PUT request.
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: newDevourState,
+    }).then(function () {
+      console.log("changed devour to", newDevour);
+      // Reload the page to get the updated list
+      location.reload();
+    });
+  });
+});
