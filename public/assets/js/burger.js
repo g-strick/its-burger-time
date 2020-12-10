@@ -25,7 +25,7 @@ $(function () {
     console.log("newDevour:", newDevour);
 
     var newDevourState = {
-      devour: true,
+      devour: !newDevour,
       // id: id,
     };
     console.log("new devour");
