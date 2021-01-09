@@ -1,4 +1,15 @@
 body {
   background-color: lightblue;
   margin-top: 20px;
+  font-family: futura;
+}
+
+@font-face {
+  font-family: krabbyPatty;
+  src: url(krabbyPatty.ttf);
+}
+
+h2,
+h1 {
+  font-family: krabbyPatty;
 }
