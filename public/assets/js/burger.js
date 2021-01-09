@@ -21,12 +21,13 @@ $(function () {
 $(function () {
   $(".change-devour").on("click", function (event) {
     var id = $(this).data("id");
+    console.log("id:", id);
     var newDevour = $(this).data("newdevour");
+    console.log("$(this).data:", $(this).data);
     console.log("newDevour:", newDevour);
 
     var newDevourState = {
       devour: !newDevour,
-      // id: id,
     };
     console.log("new devour");
     // Send the PUT request.
