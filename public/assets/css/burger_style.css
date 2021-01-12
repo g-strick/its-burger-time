@@ -8,8 +8,11 @@ body {
   font-family: krabbyPatty;
   src: url(krabbyPatty.ttf);
 }
-
 h2,
 h1 {
   font-family: krabbyPatty;
+}
+
+.change-devour {
+  float: right;
 }

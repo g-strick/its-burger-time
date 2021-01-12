@@ -3,7 +3,7 @@ var exphbs = require("express-handlebars");
 var mysql = require("mysql");
 var app = express();
 
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3006;
 
 app.use(express.static("public"));
 
